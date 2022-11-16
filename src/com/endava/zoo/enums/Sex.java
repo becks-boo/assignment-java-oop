@@ -1,4 +1,4 @@
-package enums;
+package com.endava.zoo.enums;
 
 public enum Sex {
     MALE,
