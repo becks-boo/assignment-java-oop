@@ -3,8 +3,7 @@ public interface AnimalInterface {
     public abstract void drink();
     public abstract void move();
     public abstract void procreate();
-
-    default void breathe() {
-        System.out.println("Breathing.");
-    }
+    public abstract void sleep();
+    public abstract void breathe();
+    public abstract void excrete();
 }

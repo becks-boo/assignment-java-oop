@@ -1,14 +1,12 @@
-public abstract class Animal {
+import enums.Sex;
+
+public abstract class Animal implements AnimalInterface {
     public String name;
     public String mainColor;
+    public String bodySurface;
     public int sizeInCm;
+
+    private int birthday;
     private int lifeExpectancyInMonths;
-
-    public abstract void eat();
-    public abstract void drink();
-    public abstract void procreate();
-
-    public void breathe() {
-        System.out.println("Breathing.");
-    };
+    private Sex sex;
 }
