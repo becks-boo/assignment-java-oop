@@ -7,7 +7,7 @@ import com.endava.zoo.enums.Sex;
 import java.time.LocalDate;
 
 public class Shark extends Fish {
-    public Shark(String name, String bodySurface, int sizeInCm, LocalDate birthday, int lifeExpectancyInMonths, Sex sex) {
-        super(name, bodySurface, sizeInCm, birthday, lifeExpectancyInMonths, sex);
+    public Shark(String name, int sizeInCm, HabitatType habitatType, LocalDate birthday, int lifeExpectancyInMonths, Sex sex) {
+        super(name, sizeInCm, habitatType, birthday, lifeExpectancyInMonths, sex);
     }
 }

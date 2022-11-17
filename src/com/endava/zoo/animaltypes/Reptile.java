@@ -7,10 +7,8 @@ import com.endava.zoo.enums.Sex;
 import java.time.LocalDate;
 
 public abstract class Reptile extends Animal {
-    String bodySurface = "scale";
-
-    public Reptile(String name, String bodySurface, int sizeInCm, HabitatType habitatType, LocalDate birthday, int lifeExpectancyInMonths, Sex sex) {
-        super(name, bodySurface, sizeInCm, habitatType, birthday, lifeExpectancyInMonths, sex);
+    public Reptile(String name, int sizeInCm, HabitatType habitatType, LocalDate birthday, int lifeExpectancyInMonths, Sex sex) {
+        super(name, sizeInCm, habitatType, birthday, lifeExpectancyInMonths, sex);
     }
 
     @Override

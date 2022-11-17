@@ -5,49 +5,16 @@ import com.endava.zoo.enums.HabitatType;
 import com.endava.zoo.enums.Sex;
 
 import java.time.LocalDate;
-import java.util.Date;
 
 public abstract class Mammal extends Animal {
-    int gestationPeriodInDays;
+    private final int pregnancyInDays;
 
-    public Mammal(String name, String bodySurface, int sizeInCm, HabitatType habitatType, LocalDate birthday, int lifeExpectancyInMonths, Sex sex, int gestationPeriodInDays) {
-        super(name, bodySurface, sizeInCm, habitatType, birthday, lifeExpectancyInMonths, sex);
-        this.gestationPeriodInDays = gestationPeriodInDays;
+    public Mammal(String name, int sizeInCm, HabitatType habitatType, LocalDate birthday, int lifeExpectancyInMonths, Sex sex, int pregnancyInDays) {
+        super(name, sizeInCm, habitatType, birthday, lifeExpectancyInMonths, sex);
+        this.pregnancyInDays = pregnancyInDays;
     }
 
-
-    @Override
-    public void eat() {
-
-    }
-
-    @Override
-    public void drink() {
-
-    }
-
-    @Override
-    public void move() {
-
-    }
-
-    @Override
-    public void procreate() {
-
-    }
-
-    @Override
-    public void sleep() {
-
-    }
-
-    @Override
-    public void breathe() {
-
-    }
-
-    @Override
-    public void excrete() {
-
+    public int getPregnancyInDays() {
+        return pregnancyInDays;
     }
 }

@@ -7,8 +7,8 @@ import com.endava.zoo.enums.Sex;
 import java.time.LocalDate;
 
 public abstract class Fish extends Animal {
-    public Fish(String name, String bodySurface, int sizeInCm, LocalDate birthday, int lifeExpectancyInMonths, Sex sex) {
-        super(name, bodySurface, sizeInCm, HabitatType.WATER, birthday, lifeExpectancyInMonths, sex);
+    public Fish(String name, int sizeInCm, HabitatType habitatType, LocalDate birthday, int lifeExpectancyInMonths, Sex sex) {
+        super(name, sizeInCm, habitatType, birthday, lifeExpectancyInMonths, sex);
     }
 
     @Override

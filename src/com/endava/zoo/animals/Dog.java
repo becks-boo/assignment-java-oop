@@ -5,22 +5,51 @@ import com.endava.zoo.enums.HabitatType;
 import com.endava.zoo.enums.Sex;
 
 import java.time.LocalDate;
-import java.time.Period;
 
 public class Dog extends Mammal {
     final int maxBreastfeedAgeInDays = 42;
 
-    public Dog(String name, String bodySurface, int sizeInCm, HabitatType habitatType, LocalDate birthday, int lifeExpectancyInMonths, Sex sex, int gestationPeriodInDays) {
-        super(name, bodySurface, sizeInCm, habitatType, birthday, lifeExpectancyInMonths, sex, gestationPeriodInDays);
+    public Dog(String name, int sizeInCm, HabitatType habitatType, LocalDate birthday, Sex sex) {
+        super(name, sizeInCm, habitatType, birthday, 144, sex, 63);
     }
 
-    public int ageInDays(LocalDate birthday) {
-        LocalDate today = LocalDate.now();
-
-        return Period.between(birthday, today).getDays();
-    }
-
-    public boolean isBreastfed(int age) {
+/*    public boolean isBreastfed(LocalDate birthday) {
+        int age =
         return (age <= maxBreastfeedAgeInDays);
+    }*/
+
+    @Override
+    public void eat() {
+
+    }
+
+    @Override
+    public void drink() {
+
+    }
+
+    @Override
+    public void move() {
+        System.out.println("Walking on four legs.");
+    }
+
+    @Override
+    public void procreate() {
+
+    }
+
+    @Override
+    public void sleep() {
+
+    }
+
+    @Override
+    public void breathe() {
+
+    }
+
+    @Override
+    public void excrete() {
+
     }
 }
