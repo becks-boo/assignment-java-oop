@@ -8,15 +8,16 @@ import com.endava.zoo.animaltypes.Bird;
 import com.endava.zoo.animaltypes.Mammal;
 import com.endava.zoo.animaltypes.Reptile;
 import com.endava.zoo.enclousures.AirEnclousure;
+import com.endava.zoo.enclousures.Enclousure;
 import com.endava.zoo.enclousures.LandEnclousure;
 import com.endava.zoo.enums.HabitatType;
 import com.endava.zoo.enums.Sex;
 
 import java.time.LocalDate;
 import java.time.Month;
+import java.util.ArrayList;
 
 public class Zoo {
-
     public static void main(String[] args) {
         //TODO: Enclosures
         // Enclosure aquarium = new Aquarium();
@@ -37,28 +38,10 @@ public class Zoo {
         dog1.setName("Becks");
         dogHouse.addAnimal(dog2);
 
-        if (dogHouse.belongsToEnclousure(shark1)) {
+        if (dogHouse.addAnimal(shark1)) {
             System.out.println(shark1.getName() + " was added.\n");
         } else {
             System.out.println(shark1.getName() + " doesn't belong in the doghouse.\n");
-        }
-
-        if (dogHouse.belongsToEnclousure(vulture1)) {
-            System.out.println(vulture1.getName() + " was added.\n");
-        } else {
-            System.out.println(vulture1.getName() + " doesn't belong in the doghouse.\n");
-        }
-
-        if (birdHouse.belongsToEnclousure(dog1)) {
-            System.out.println(dog1.getName() + " was added.\n");
-        } else {
-            System.out.println(dog1.getName() + " doesn't belong in the birdcage.\n");
-        }
-
-        if (birdHouse.belongsToEnclousure(vulture1)) {
-            System.out.println(vulture1.getName() + " was added.\n");
-        } else {
-            System.out.println(vulture1.getName() + " doesn't belong in the birdcage.\n");
         }
 
         //TODO: Print out the number of animals in each enclosure

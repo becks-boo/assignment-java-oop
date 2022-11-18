@@ -44,10 +44,6 @@ public abstract class Enclousure implements EnclousureInterface {
         return habitatType;
     }
 
-    public boolean belongsToEnclousure(Animal animal) {
-        return addAnimal(animal);
-    }
-
     @Override
     public boolean addAnimal(Animal animal) {
         if (habitatType == animal.getHabitat()) {

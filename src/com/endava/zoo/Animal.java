@@ -52,6 +52,8 @@ public abstract class Animal implements AnimalInterface {
         return sex;
     }
 
+    public HabitatType getHabitat() { return habitatType; }
+
     public int ageInMonths(LocalDate birthday) {
         LocalDate today = LocalDate.now();
         int years = Period.between(birthday, today).getYears();
@@ -63,8 +65,6 @@ public abstract class Animal implements AnimalInterface {
         int months = lifeExpectancyInMonths - age;
         return months / 12;
     }
-
-    public HabitatType getHabitat() { return habitatType; }
 
     @Override
     public void eat() {
