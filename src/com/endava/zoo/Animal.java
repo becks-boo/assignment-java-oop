@@ -67,6 +67,41 @@ public abstract class Animal implements AnimalInterface {
     public HabitatType getHabitat() { return habitatType; }
 
     @Override
+    public void eat() {
+        System.out.println("Eating.");
+    }
+
+    @Override
+    public void drink() {
+        System.out.println("Drinking.");
+    }
+
+    @Override
+    public void procreate() {
+        System.out.println("Having fun time.");
+    }
+
+    @Override
+    public void sleep() {
+        System.out.println("Sleeping.");
+    }
+
+    @Override
+    public void breathe() {
+        System.out.println("Breathing.");
+    }
+
+    @Override
+    public void excrete() {
+        System.out.println("Excreting.");
+    }
+
+    @Override
+    public void move() {
+        System.out.println("Moving.");
+    }
+
+    @Override
     public String toString() {
         return "Animal{" +
                 "name='" + name + '\'' +

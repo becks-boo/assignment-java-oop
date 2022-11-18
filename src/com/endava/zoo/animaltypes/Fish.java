@@ -12,18 +12,8 @@ public abstract class Fish extends Animal {
     }
 
     @Override
-    public void eat() {
-
-    }
-
-    @Override
-    public void drink() {
-
-    }
-
-    @Override
     public void move() {
-        System.out.println("Moving with fins.");
+        System.out.println("Swimming. Moving with fins.");
     }
 
     @Override
@@ -32,17 +22,7 @@ public abstract class Fish extends Animal {
     }
 
     @Override
-    public void sleep() {
-
-    }
-
-    @Override
     public void breathe() {
         System.out.println("Breathing through gills.");
-    }
-
-    @Override
-    public void excrete() {
-
     }
 }
