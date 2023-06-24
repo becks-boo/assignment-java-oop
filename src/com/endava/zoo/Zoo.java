@@ -22,7 +22,7 @@ public class Zoo {
         //TODO: Enclosures
         // Enclosure aquarium = new Aquarium();
         LandEnclousure<Reptile, Mammal, Amphibian> dogHouse = new LandEnclousure<>("Dog House", 10, 4);
-        AirEnclousure<Bird, Mammal> birdHouse = new AirEnclousure<>("Big Birdcage",100, 8);
+        AirEnclousure<Bird, Mammal> birdHouse = new AirEnclousure<>("Big Birdcage", 100, 8);
 
         //TODO: Animals
         // com.endava.zoo.animaltypes.Fish fish = new com.endava.zoo.animaltypes.Fish("Nemo", "Male");
