@@ -1,5 +1,5 @@
 <table align="center"><tr><td align="center" width="9999">
-<img src="https://www.ibexa.co/var/site/storage/images/6/1/6/0/210616-2-eng-GB/Endava_Logo_RGB_Original_cut.png" align="center" width="50%" alt="Endava">
+
 
 # Assignment 10
 
